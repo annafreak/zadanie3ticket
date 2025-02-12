@@ -1,5 +1,4 @@
 
-
 class cinemaTicket{
     String name;
     int seatNumber;
@@ -13,11 +12,21 @@ class cinemaTicket{
 
     }
     public void ticketReservation(  boolean reservation){
-    System.out.println("Ticket Reservation "+ name + " " +reservation);
+        if(reservation == true){
+            System.out.println("You have reserved the cinema");
+        }else{
+            System.out.println("You have not reserved the cinema");
+        }
+
 
     }
     public void cancelReservation( boolean reservation){
-        System.out.println("Cancel Reservation "+ name + " " +reservation);
+        if(reservation == true){
+            System.out.println("you have canceled the cinema");
+        }else{
+            System.out.println("You have not canceled the cinema");
+        }
+
 
     }
     public void display(){
@@ -25,7 +34,7 @@ class cinemaTicket{
         System.out.println("Name: " + name);
         System.out.println("Seat: " + seatNumber);
         System.out.println("Price: " + price);
-        System.out.println("Reservation: " + reservation);
+
 
 
     }
